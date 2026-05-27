@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="1100" viewBox="0 0 850 1100">
+  <rect width="850" height="1100" fill="#ffffff"/>
+  <rect x="0" y="0" width="850" height="170" fill="#07111f"/>
+  <text x="70" y="78" fill="#ffffff" font-family="Arial, sans-serif" font-size="36" font-weight="700">Mrityunjoy Kumar Deka</text>
+  <text x="70" y="120" fill="#3ee7d3" font-family="Arial, sans-serif" font-size="20">Full Stack Web Developer | React Developer | AI-Assisted Developer</text>
+  <text x="70" y="148" fill="#9eb0c7" font-family="Arial, sans-serif" font-size="16">India | mrityunjoy@example.com | GitHub | LinkedIn</text>
+  <text x="70" y="230" fill="#07111f" font-family="Arial, sans-serif" font-size="22" font-weight="700">Profile</text>
+  <text x="70" y="265" fill="#334155" font-family="Arial, sans-serif" font-size="16">Modern web developer focused on responsive React interfaces, full stack foundations,</text>
+  <text x="70" y="290" fill="#334155" font-family="Arial, sans-serif" font-size="16">business websites, dashboard UI, API integration, and AI-assisted development workflows.</text>
+  <text x="70" y="350" fill="#07111f" font-family="Arial, sans-serif" font-size="22" font-weight="700">Skills</text>
+  <text x="70" y="385" fill="#334155" font-family="Arial, sans-serif" font-size="16">React, TypeScript, JavaScript, Tailwind CSS, HTML5, CSS3, Node.js, Express.js, MongoDB,</text>
+  <text x="70" y="410" fill="#334155" font-family="Arial, sans-serif" font-size="16">REST APIs, Firebase, Git, GitHub, Responsive Web Design, Dashboard UI, Authentication.</text>
+  <text x="70" y="470" fill="#07111f" font-family="Arial, sans-serif" font-size="22" font-weight="700">Selected Projects</text>
+  <text x="70" y="505" fill="#0f172a" font-family="Arial, sans-serif" font-size="18" font-weight="700">SmartPredict</text>
+  <text x="70" y="530" fill="#334155" font-family="Arial, sans-serif" font-size="16">Socio-demographic smartphone addiction estimator with questionnaire, analysis,</text>
+  <text x="70" y="555" fill="#334155" font-family="Arial, sans-serif" font-size="16">recommendations, React frontend, Node/Express backend, and MongoDB integration.</text>
+  <text x="70" y="600" fill="#0f172a" font-family="Arial, sans-serif" font-size="18" font-weight="700">Weather App</text>
+  <text x="70" y="625" fill="#334155" font-family="Arial, sans-serif" font-size="16">Real-time weather forecasting app with API integration, search, weather cards,</text>
+  <text x="70" y="650" fill="#334155" font-family="Arial, sans-serif" font-size="16">forecast display, responsive UI, and TypeScript implementation.</text>
+  <text x="70" y="695" fill="#0f172a" font-family="Arial, sans-serif" font-size="18" font-weight="700">Restaurant Web App</text>
+  <text x="70" y="720" fill="#334155" font-family="Arial, sans-serif" font-size="16">Modern restaurant website concept with food showcase, menu system, order flow,</text>
+  <text x="70" y="745" fill="#334155" font-family="Arial, sans-serif" font-size="16">delivery section, and business-focused responsive design.</text>
+  <text x="70" y="805" fill="#07111f" font-family="Arial, sans-serif" font-size="22" font-weight="700">Interests</text>
+  <text x="70" y="840" fill="#334155" font-family="Arial, sans-serif" font-size="16">Web development, app development, SaaS products, AI-integrated apps, freelance projects,</text>
+  <text x="70" y="865" fill="#334155" font-family="Arial, sans-serif" font-size="16">startup projects, business websites, and modern UI/UX.</text>
+  <text x="70" y="925" fill="#07111f" font-family="Arial, sans-serif" font-size="22" font-weight="700">Availability</text>
+  <text x="70" y="960" fill="#334155" font-family="Arial, sans-serif" font-size="16">Open to internships, remote jobs, freelance websites, startup MVPs, and local business projects.</text>
+  <text x="70" y="1025" fill="#64748b" font-family="Arial, sans-serif" font-size="14">Replace this generated resume with your final PDF before production applications.</text>
+</svg>

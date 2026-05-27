@@ -1,0 +1,9 @@
+Mrityunjoy Kumar Deka
+Full Stack Web Developer | React Developer | AI-Assisted Developer
+Location: India
+
+Focus:
+React, TypeScript, JavaScript, Tailwind CSS, Node.js, Express.js, MongoDB, REST APIs, Firebase, responsive web design, dashboard UI, and AI-assisted development.
+
+Portfolio:
+Replace this placeholder with a polished PDF resume before production deployment.
