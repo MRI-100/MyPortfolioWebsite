@@ -41,8 +41,10 @@ body::before {
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(600px circle at var(--cursor-x) var(--cursor-y), rgba(62, 231, 211, 0.11), transparent 42%),
+    radial-gradient(620px circle at var(--cursor-x) var(--cursor-y), rgba(62, 231, 211, 0.13), rgba(91, 140, 255, 0.055) 25%, transparent 48%),
     linear-gradient(180deg, rgba(91, 140, 255, 0.08), transparent 34%);
+  filter: blur(0.2px);
+  will-change: background;
 }
 
 #root {
@@ -64,15 +66,27 @@ body::before {
   }
 
   .panel {
-    @apply border border-white/10 bg-white/[0.055] shadow-soft backdrop-blur-xl light:border-slate-200 light:bg-white light:text-slate-950;
+    @apply border border-white/10 bg-white/[0.055] shadow-soft backdrop-blur-xl transition duration-300 light:border-slate-200 light:bg-white light:text-slate-950;
   }
 
   .button-primary {
-    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-brand-cyan px-6 text-sm font-bold text-ink shadow-glow transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-2 focus:ring-brand-cyan focus:ring-offset-2 focus:ring-offset-ink;
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-brand-cyan px-6 text-sm font-bold text-ink shadow-glow transition duration-300 hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-2 focus:ring-brand-cyan focus:ring-offset-2 focus:ring-offset-ink;
   }
 
   .button-secondary {
-    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-6 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-brand-cyan hover:text-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan focus:ring-offset-2 focus:ring-offset-ink light:border-slate-300 light:bg-slate-50 light:text-slate-950;
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-6 text-sm font-bold text-white transition duration-300 hover:-translate-y-0.5 hover:border-brand-cyan hover:text-brand-cyan focus:outline-none focus:ring-2 focus:ring-brand-cyan focus:ring-offset-2 focus:ring-offset-ink light:border-slate-300 light:bg-slate-50 light:text-slate-950;
+  }
+}
+
+@media (max-width: 768px) {
+  body::before {
+    background:
+      radial-gradient(420px circle at 50% 12%, rgba(62, 231, 211, 0.08), transparent 54%),
+      linear-gradient(180deg, rgba(91, 140, 255, 0.06), transparent 30%);
+  }
+
+  .panel {
+    backdrop-filter: blur(12px);
   }
 }
 

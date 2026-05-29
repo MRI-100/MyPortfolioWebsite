@@ -5,23 +5,15 @@ import { BackToTop } from '../components/BackToTop';
 import { LoadingScreen } from '../components/LoadingScreen';
 import { Navbar } from '../components/Navbar';
 import { ScrollProgress } from '../components/ScrollProgress';
+import { useMouseSpotlight } from '../hooks/useMouseSpotlight';
 
 export function MainLayout() {
   const [loading, setLoading] = useState(true);
+  useMouseSpotlight();
 
   useEffect(() => {
     const timer = window.setTimeout(() => setLoading(false), 720);
-
-    const onPointerMove = (event: PointerEvent) => {
-      document.documentElement.style.setProperty('--cursor-x', `${event.clientX}px`);
-      document.documentElement.style.setProperty('--cursor-y', `${event.clientY}px`);
-    };
-
-    window.addEventListener('pointermove', onPointerMove);
-    return () => {
-      window.clearTimeout(timer);
-      window.removeEventListener('pointermove', onPointerMove);
-    };
+    return () => window.clearTimeout(timer);
   }, []);
 
   return (

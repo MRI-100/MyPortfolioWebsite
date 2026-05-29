@@ -20,8 +20,8 @@ export function Projects() {
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeading
             eyebrow="Projects"
-            title="Project showcases built to signal practical ability."
-            copy="These projects present the kind of work recruiters, startup founders, and business owners care about: clear UI, useful flows, API thinking, full stack structure, and responsive execution."
+            title="Project work that shows product thinking, not just screens."
+            copy="Each build is framed around a real skill signal: UI polish, APIs, responsiveness, business value, or full stack structure."
           />
           <div className="flex flex-wrap gap-3">
             {projectFilters.map((filter) => (
@@ -49,7 +49,7 @@ export function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ delay: index * 0.04 }}
-              className="panel group rounded-2xl p-4 transition hover:-translate-y-1 hover:border-brand-cyan/50"
+              className="panel group rounded-2xl p-4 transition hover:-translate-y-1 hover:border-brand-cyan/50 hover:shadow-glow"
             >
               <ProjectVisual title={project.title} accent={project.accent} />
               <div className="p-2 pt-6">
@@ -65,6 +65,10 @@ export function Projects() {
                 </div>
                 <h3 className="mt-4 font-display text-2xl font-black text-white light:text-slate-950">{project.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-mist light:text-slate-600">{project.description}</p>
+                <p className="mt-3 rounded-2xl border border-white/10 bg-white/[0.04] p-3 text-sm leading-6 text-mist light:border-slate-200 light:bg-slate-50 light:text-slate-600">
+                  <span className="font-bold text-white light:text-slate-950">Why it matters: </span>
+                  {project.relevance}
+                </p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {project.stack.map((tech) => (
                     <span key={tech} className="rounded-full bg-white/[0.07] px-3 py-1 text-xs font-semibold text-mist light:bg-slate-100 light:text-slate-700">
@@ -103,12 +107,13 @@ export function Projects() {
         </div>
 
         <div className="panel mt-10 rounded-2xl p-6 sm:p-8">
-          <p className="eyebrow">Interactive project modal</p>
+          <p className="eyebrow">Selected project</p>
           <div className="mt-4 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <ProjectVisual title={selectedProject.title} accent={selectedProject.accent} />
             <div>
               <h3 className="font-display text-3xl font-black text-white light:text-slate-950">{selectedProject.title}</h3>
               <p className="mt-4 leading-8 text-mist light:text-slate-600">{selectedProject.description}</p>
+              <p className="mt-4 leading-8 text-mist light:text-slate-600">{selectedProject.relevance}</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {selectedProject.features.map((feature) => (
                   <span key={feature} className="rounded-full border border-white/10 px-3 py-1 text-sm text-mist light:border-slate-200">

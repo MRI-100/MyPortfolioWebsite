@@ -5,23 +5,23 @@ import { SectionHeading } from '../components/SectionHeading';
 const learning = [
   {
     icon: GraduationCap,
-    title: 'Career-building mindset',
-    copy: 'Actively building project depth, stronger fundamentals, better communication, and recruiter-ready proof of work.',
+    title: 'Current focus',
+    copy: 'Sharper projects, stronger fundamentals, and clearer proof of work for recruiters and clients.',
   },
   {
     icon: BookOpenCheck,
-    title: 'Modern web practice',
-    copy: 'React Router DOM, responsive design, component architecture, dashboard UI, API integration, and form workflows.',
+    title: 'Frontend priorities',
+    copy: 'Responsive layouts, component structure, accessible forms, dashboard UI, and smooth interaction states.',
   },
   {
     icon: Cloud,
-    title: 'Cloud fundamentals',
-    copy: 'Understanding deployment, hosting basics, application delivery, and the reliability expectations of real products.',
+    title: 'Deployment mindset',
+    copy: 'Building with performance, SEO, hosting, and production handoff in mind.',
   },
   {
     icon: DatabaseZap,
-    title: 'Data and backend awareness',
-    copy: 'MongoDB, Firebase, REST APIs, authentication concepts, data analytics fundamentals, and backend-driven products.',
+    title: 'Backend awareness',
+    copy: 'REST APIs, MongoDB, Firebase, authentication concepts, and data-driven product flows.',
   },
 ];
 
@@ -31,8 +31,8 @@ export function Experience() {
       <div className="container-page">
         <SectionHeading
           eyebrow="Learning journey"
-          title="Presented honestly: early career, practical, and improving fast."
-          copy="I am building my career through hands-on projects, continuous learning, and practical web development. The message is not years of inflated experience; it is momentum, seriousness, and the ability to build useful software."
+          title="Early career, practical, and improving with intent."
+          copy="I am building credibility through shipped interfaces, stronger project decisions, and consistent learning."
         />
         <div className="mt-12 grid gap-5 md:grid-cols-2">
           {learning.map((item, index) => (

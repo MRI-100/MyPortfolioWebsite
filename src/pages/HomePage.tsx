@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
 import { About } from '../sections/About';
-import { Blog } from '../sections/Blog';
 import { Contact } from '../sections/Contact';
 import { CTA } from '../sections/CTA';
 import { Experience } from '../sections/Experience';
 import { Footer } from '../sections/Footer';
 import { Hero } from '../sections/Hero';
 import { Projects } from '../sections/Projects';
+import { Resume } from '../sections/Resume';
 import { Services } from '../sections/Services';
 import { Skills } from '../sections/Skills';
-import { Testimonials } from '../sections/Testimonials';
+import { Workflow } from '../sections/Workflow';
 
 export function HomePage() {
   return (
@@ -20,9 +20,9 @@ export function HomePage() {
       <Projects />
       <Services />
       <Experience />
+      <Workflow />
       <CTA />
-      <Testimonials />
-      <Blog />
+      <Resume />
       <Contact />
       <Footer />
     </motion.main>

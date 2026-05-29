@@ -6,7 +6,7 @@ Premium personal portfolio built with React, TypeScript, Tailwind CSS, Vite, Fra
 
 - Responsive dark-first design with light theme toggle
 - Sticky navigation, active section highlights, mobile menu, scroll progress, loading screen, and back-to-top control
-- Premium hero, about, skills, projects, services, journey, testimonials, blog placeholder, CTA, contact, and footer sections
+- Premium hero, about, skills, projects, services, journey, workflow, resume, CTA, contact, and footer sections
 - Filterable project showcase with interactive preview details
 - Validated contact form with Formspree support
 - SEO meta tags, Open Graph preview, favicon, and accessible landmarks
@@ -34,7 +34,7 @@ Create a `.env` file and add your Formspree endpoint:
 VITE_FORMSPREE_ENDPOINT=https://formspree.io/f/your-form-id
 ```
 
-Without this variable, the form still validates locally and provides an email fallback. Replace `mrityunjoy@example.com`, GitHub, and LinkedIn URLs in `src/sections/Contact.tsx`, `src/sections/Footer.tsx`, and `src/sections/Hero.tsx`.
+Without this variable, the form still validates locally and provides an email fallback to `mrityunjoykdeka100@gmail.com`.
 
 ## Content Updates
 

@@ -22,9 +22,9 @@ export function Footer() {
         </div>
         <div className="flex items-center gap-3">
           {[
-            { href: 'mailto:mrityunjoy@example.com', label: 'Email', icon: Mail },
-            { href: 'https://github.com/', label: 'GitHub', icon: Github },
-            { href: 'https://www.linkedin.com/', label: 'LinkedIn', icon: Linkedin },
+            { href: 'mailto:mrityunjoykdeka100@gmail.com', label: 'Email', icon: Mail },
+            { href: 'https://github.com/MRI-100', label: 'GitHub', icon: Github },
+            { href: 'https://www.linkedin.com/in/mrityunjoykdeka100', label: 'LinkedIn', icon: Linkedin },
           ].map((item) => (
             <a
               key={item.label}

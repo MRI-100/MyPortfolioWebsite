@@ -66,8 +66,8 @@ export function Contact() {
       <div className="container-page">
         <SectionHeading
           eyebrow="Contact"
-          title="Let’s talk about internships, remote roles, freelance work, or startup ideas."
-          copy="I am open to practical projects where clean UI, responsive development, APIs, and business-friendly execution matter."
+          title="Let's talk about roles, freelance work, or startup ideas."
+          copy="Best fit: React interfaces, business websites, dashboards, API-driven apps, and polished responsive builds."
         />
 
         <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
@@ -80,9 +80,9 @@ export function Contact() {
               <h3 className="mt-5 font-display text-2xl font-black text-white light:text-slate-950">Fastest ways to reach me</h3>
               <div className="mt-6 space-y-4">
                 {[
-                  { label: 'Email', value: 'mrityunjoy@example.com', icon: Mail, href: 'mailto:mrityunjoy@example.com' },
-                  { label: 'LinkedIn', value: 'Connect professionally', icon: Linkedin, href: 'https://www.linkedin.com/' },
-                  { label: 'GitHub', value: 'Review projects and code', icon: Github, href: 'https://github.com/' },
+                  { label: 'Email', value: 'mrityunjoykdeka100@gmail.com', icon: Mail, href: 'mailto:mrityunjoykdeka100@gmail.com' },
+                  { label: 'LinkedIn', value: 'Professional profile', icon: Linkedin, href: 'https://www.linkedin.com/in/mrityunjoykdeka100' },
+                  { label: 'GitHub', value: 'Projects and code', icon: Github, href: 'https://github.com/MRI-100' },
                   { label: 'Location', value: 'India', icon: MapPin, href: '#contact' },
                 ].map((item) => (
                   <a
@@ -156,7 +156,9 @@ export function Contact() {
               />
             </label>
             {status.message && (
-              <div
+              <motion.div
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
                 className={`mt-5 rounded-2xl border p-4 text-sm font-semibold ${
                   status.type === 'success'
                     ? 'border-brand-lime/30 bg-brand-lime/10 text-brand-lime'
@@ -169,7 +171,7 @@ export function Contact() {
                     Open email
                   </a>
                 )}
-              </div>
+              </motion.div>
             )}
             <button type="submit" disabled={submitting} className="button-primary mt-6 w-full disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto">
               <Send className="h-4 w-4" />

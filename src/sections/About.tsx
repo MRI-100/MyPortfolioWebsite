@@ -4,10 +4,10 @@ import { SectionHeading } from '../components/SectionHeading';
 import { journey } from '../data/site';
 
 const cards = [
-  { title: 'Product-minded', copy: 'I think about user goals, client outcomes, and clean conversion paths.', icon: TrendingUp },
-  { title: 'UI-focused', copy: 'I care about responsive spacing, hierarchy, motion, and the small polish details.', icon: LayoutTemplate },
-  { title: 'Full stack learner', copy: 'React, Node, Express, MongoDB, APIs, auth flows, and dashboard foundations.', icon: Code2 },
-  { title: 'AI productive', copy: 'I use AI-assisted workflows to ideate faster, debug smarter, and ship cleaner work.', icon: BrainCircuit },
+  { title: 'Product-minded', copy: 'I connect interface decisions to user goals and business outcomes.', icon: TrendingUp },
+  { title: 'UI-focused', copy: 'Spacing, hierarchy, responsiveness, and motion are part of the build.', icon: LayoutTemplate },
+  { title: 'Full stack aware', copy: 'Comfortable with React, APIs, Node, MongoDB, Firebase, and auth flows.', icon: Code2 },
+  { title: 'AI productive', copy: 'I use AI to move faster while keeping code and decisions understandable.', icon: BrainCircuit },
 ];
 
 export function About() {
@@ -16,8 +16,8 @@ export function About() {
       <div className="container-page">
         <SectionHeading
           eyebrow="About"
-          title="A growing developer with a serious eye for real-world products."
-          copy="I build modern web applications with a focus on responsive UI, clear user journeys, reusable code, and practical business value. My goal is to become the kind of developer teams and clients can trust with important digital experiences."
+          title="A modern developer focused on useful, polished web products."
+          copy="I build responsive React interfaces, practical app flows, and business-ready websites. The focus is simple: clear UX, clean code, and work that feels reliable."
         />
         <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {cards.map((card, index) => (
@@ -40,11 +40,11 @@ export function About() {
           <div className="panel rounded-2xl p-6 sm:p-8">
             <p className="eyebrow">Focus</p>
             <h3 className="mt-4 font-display text-2xl font-black text-white light:text-slate-950">
-              From learning to shipping practical, client-ready work.
+              Practical work over inflated claims.
             </h3>
             <p className="mt-5 leading-8 text-mist light:text-slate-600">
-              I am especially interested in web development, app development, SaaS products, AI-integrated apps,
-              freelance projects, startup projects, business websites, and modern UI/UX.
+              I am building depth through web apps, SaaS-style interfaces, AI-integrated ideas, freelance-ready
+              websites, startup concepts, and careful UI/UX practice.
             </p>
           </div>
           <div className="space-y-4">

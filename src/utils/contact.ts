@@ -14,7 +14,7 @@ export async function submitContactForm(payload: ContactPayload) {
       ok: true,
       message:
         'Thanks. The form is validated locally. Add VITE_FORMSPREE_ENDPOINT to send messages directly from production.',
-      mailto: `mailto:mrityunjoy@example.com?subject=${encodeURIComponent(
+      mailto: `mailto:mrityunjoykdeka100@gmail.com?subject=${encodeURIComponent(
         `Portfolio inquiry from ${payload.name}`,
       )}&body=${encodeURIComponent(`${payload.message}\n\nBudget: ${payload.budget}\nEmail: ${payload.email}`)}`,
     };

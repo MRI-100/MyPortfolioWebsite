@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Download, Github, Linkedin, Mail, Sparkles } from 'lucide-react';
 import { fadeUp, staggerContainer } from '../animations/variants';
+import { DeveloperVisual } from '../components/DeveloperVisual';
+import { MagneticLink } from '../components/MagneticLink';
 import { stats } from '../data/site';
 
 const roles = ['Full Stack Web Developer', 'React Developer', 'AI-Assisted Developer'];
@@ -17,7 +19,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-4 py-2 text-sm font-semibold text-mist backdrop-blur light:border-slate-200 light:bg-white light:text-slate-700"
           >
             <span className="h-2 w-2 rounded-full bg-brand-lime" />
-            Available for internships, remote roles, and freelance projects
+            Frontend polish. Full stack awareness. Business-minded execution.
           </motion.div>
           <motion.h1
             variants={fadeUp}
@@ -29,8 +31,8 @@ export function Hero() {
             </span>
           </motion.h1>
           <motion.p variants={fadeUp} className="mt-6 max-w-2xl text-lg leading-8 text-mist light:text-slate-600">
-            I am Mrityunjoy Kumar Deka, a developer from India creating fast, responsive, and business-focused
-            websites, dashboards, full stack applications, and polished product interfaces.
+            I am Mrityunjoy Kumar Deka, a developer from India building responsive interfaces, useful dashboards,
+            business websites, and practical app experiences with modern React.
           </motion.p>
           <motion.div variants={fadeUp} className="mt-6 flex min-h-8 flex-wrap items-center gap-3 text-sm font-bold text-brand-cyan">
             <Sparkles className="h-4 w-4" />
@@ -48,22 +50,22 @@ export function Hero() {
             </span>
           </motion.div>
           <motion.div variants={fadeUp} className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a href="#contact" className="button-primary">
+            <MagneticLink href="#contact" className="button-primary">
               Hire Me
-            </a>
-            <a href="#projects" className="button-secondary">
+            </MagneticLink>
+            <MagneticLink href="#projects" className="button-secondary">
               View Projects
-            </a>
-            <a href="/Mrityunjoy-Kumar-Deka-Resume.svg" className="button-secondary" download>
+            </MagneticLink>
+            <MagneticLink href="/Mrityunjoy_Kumar_Deka_IT_Resume.pdf" className="button-secondary" download>
               <Download className="h-4 w-4" />
               Download Resume
-            </a>
+            </MagneticLink>
           </motion.div>
           <motion.div variants={fadeUp} className="mt-8 flex items-center gap-3">
             {[
-              { href: 'mailto:mrityunjoy@example.com', label: 'Email', icon: Mail },
-              { href: 'https://github.com/', label: 'GitHub', icon: Github },
-              { href: 'https://www.linkedin.com/', label: 'LinkedIn', icon: Linkedin },
+              { href: 'mailto:mrityunjoykdeka100@gmail.com', label: 'Email', icon: Mail },
+              { href: 'https://github.com/MRI-100', label: 'GitHub', icon: Github },
+              { href: 'https://www.linkedin.com/in/mrityunjoykdeka100', label: 'LinkedIn', icon: Linkedin },
             ].map((item) => (
               <a
                 key={item.label}
@@ -77,32 +79,7 @@ export function Hero() {
           </motion.div>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.94, y: 30 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.25 }}
-          className="relative mx-auto w-full max-w-lg"
-        >
-          <div className="panel relative overflow-hidden rounded-[2rem] p-5">
-            <div className="aspect-[4/5] rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-brand-cyan/24 via-brand-blue/12 to-brand-coral/22 p-5 light:border-slate-200">
-              <div className="flex h-full flex-col justify-between rounded-[1.2rem] border border-white/12 bg-ink/72 p-6 backdrop-blur-xl light:bg-white/76">
-                <div className="flex items-center justify-between">
-                  <span className="rounded-full bg-brand-lime/15 px-3 py-1 text-xs font-bold text-brand-lime">India</span>
-                  <span className="text-xs font-semibold text-mist">Open to work</span>
-                </div>
-                <div className="mx-auto grid h-40 w-40 place-items-center rounded-full border border-white/15 bg-white/[0.08] shadow-glow">
-                  <span className="font-display text-6xl font-black text-brand-cyan">MKD</span>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-brand-cyan">Profile Image Placeholder</p>
-                  <h2 className="mt-2 font-display text-3xl font-black text-white light:text-slate-950">
-                    Developer focused on product-quality execution.
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
+        <DeveloperVisual />
       </div>
 
       <div className="container-page relative mt-14">

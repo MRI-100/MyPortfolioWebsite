@@ -17,6 +17,7 @@ export type ProjectCategory = 'All' | 'React' | 'Full Stack' | 'UI/UX' | 'Busine
 export type Project = {
   title: string;
   description: string;
+  relevance: string;
   stack: string[];
   features: string[];
   tags: ProjectCategory[];
