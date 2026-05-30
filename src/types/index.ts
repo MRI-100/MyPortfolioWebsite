@@ -14,17 +14,28 @@ export type SkillCategory = {
 
 export type ProjectCategory = 'All' | 'React' | 'Full Stack' | 'UI/UX' | 'Business';
 
+export type ProjectScreenshot = {
+  url: string;
+  path?: string;
+  type?: 'desktop' | 'mobile' | 'other';
+};
+
 export type Project = {
+  id: string;
   title: string;
+  subtitle: string;
   description: string;
-  relevance: string;
-  stack: string[];
-  features: string[];
-  tags: ProjectCategory[];
-  status: string;
-  accent: string;
-  demoUrl: string;
+  role: string;
+  focus: string[];
+  techStack: string[];
   githubUrl: string;
+  liveUrl: string;
+  featured: boolean;
+  status: string;
+  category: string;
+  screenshots: ProjectScreenshot[];
+  createdAt?: Date;
+  updatedAt?: Date;
 };
 
 export type Service = {
